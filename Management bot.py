@@ -1257,12 +1257,6 @@ async def botrestart(interaction: discord.Interaction):
 # ================================================================
 #  RUN
 # ================================================================
-token = os.getenv("TOKEN")
-if not token:
-    raise ValueError("TOKEN environment variable is not set.")
-
-bot.run(token)
-```python
 # ================================================================
 #  BETA TESTING SYSTEM
 # ================================================================
@@ -1555,4 +1549,12 @@ async def weeklyreports(interaction: discord.Interaction):
         embed.description = "\n".join(lines)
 
     await interaction.response.send_message(embed=embed)
-```
+
+# ================================================================
+#  RUN
+# ================================================================
+token = os.getenv("DISCORD_TOKEN")
+if not token:
+    raise ValueError("DISCORD_TOKEN environment variable is not set.")
+
+bot.run(token)
