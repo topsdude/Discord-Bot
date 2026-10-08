@@ -8,6 +8,7 @@ import random
 import re
 from discord.ext import commands
 from discord import app_commands
+#god knows how this works :) 
 
 # ================================================================
 #  CONFIG
