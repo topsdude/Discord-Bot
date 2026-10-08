@@ -1,1 +1,1 @@
-WATA FIRST BOT I EVER MADE LEAVE ME ALONE
+This bot is similar to dyno but with more features has a bug report system also 
